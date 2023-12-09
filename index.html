@@ -470,7 +470,6 @@ flex-shrink: 0;
 {
     text-indent: 0em;
     margin-left: 15px;
-    border: 1px solid red;
     width: 470px;
 
 }
@@ -523,7 +522,19 @@ font-size: 15px;
 height: 315px;
 flex-shrink: 0;
 background: #FFF;
+border: 1px solid black;
 
+}
+.center{
+    text-align: center;
+}
+.email-btn-sub{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 35%;
+    width: 350px;
 }
    
 
@@ -783,14 +794,14 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quibusdam provide
         </div>
 
             <div class="subscribe_news-letter">
-                <div class="subscribe-news">
+                <div class="subscribe-news center">
                 Sign Up For Newsletter
                 </div>
-                <div class="">
+                <div class="center">
                     Join 60,000+ Subscribers and a new discount <br>
 coupon on every Saturday.
                 </div>
-                <div class="input-group mb-3 mt-4">
+                <div class="input-group mb-3 mt-4 email-btn-sub">
                     <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
                   </div>
