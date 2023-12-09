@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="/favicon.ico" />
@@ -15,193 +15,589 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C600%2C700"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Puritan%3A700"/>
         <!-- FONT AWESSOME -->
+        <script src="https://kit.fontawesome.com/b272402e67.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <!-- boot strap link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  fot
         <!-- style stylesheet -->
   <link rel="stylesheet" href="Styles/insurance.css"/>
 </head>
 <style>
-    *{
-    margin: 0%;
-    padding: 0%;
-    font-size: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;    
-    }
-    .insurance_sec_image_start
-    {
-        margin: 0%;
-        padding: 0%;
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+ 
+    * {
+        margin: 0;
+        padding: 0;
         font-size: 100%;
-        position:relative !important;
-        left:0% !important;
-        top:0% !important;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
     }
-    .insurance_sec_image_start,
-    .insure-life-insurance-RW5{
-        color: #000;    
-        font-size: 13px;    
-        font-weight: 700;
-        line-height: 160%; /* 20.8px */
-        letter-spacing: 0.39px;
-        text-transform: uppercase;
-        left: 4rem;
-        top: 8.1rem;
-        position: absolute;
-        z-index: 99;
 
+    body{
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
     }
-    .insurance_sec_image_start{
-        transition: transform 0.3s ease-in-out;
-    }
-    .lif-in-ce-ss {
-        position: absolute;
-        left: 4rem;
-        top: 9.5rem;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: 0.12rem;
-        text-transform: capitalize;
-        color: #2e4392;
-        white-space: nowrap;
-        z-index: 99;
-    }
-    .group-104-vdB,.insurance_family-image 
-    {
-        width: 100%;
-        height: 750%;
-        object-fit: contain;
-        vertical-align: top;
-        flex-shrink: 0;
-        background: url(Assets/Images/insurance_familyimage.png), lightgray 0px -7.857px / 100% 204.034% no-repeat, #D9D9D9;      
-    }
-    .insurance_family-image:hover
-    {
-        transform: scale(0.89);   
-        transition-delay: 0s;
-        padding: 30px;
-        animation: ss 3s ease-in-out infinite;
-    }
-   
-    @keyframes ss {
-          0% {
-            transform: scale(0.95);
-          }
-          50% {
-            transform: scale(1.1);
-          }90% {
-            transform: scale(1);
-          }
-          100% {
-            transform: scale(0.95);
-          }
+    .row{
+            width: 100%;
         }
-    
-    .card_box_insurance
-    {
-        width: 425px;
-        height: 531px;
-        flex-shrink: 0;
-        border-radius: 5px;
-        background: #F2F5F9;
-    }
-    .row
-    {
-    width: 100%;
-    }
-    .box_insurance-mid
-    {
-        width: 386px;
-        height: 49px;
-        flex-shrink: 0;
-        border-radius: 10px;
-        background: linear-gradient(180deg, #FEFEFE 0%, #F6F7FA 100%);
-    }
-    .card_box_insurance{
-        width: 425px;
-        height: max-content;
-        flex-shrink: 0;
-        border-radius: 5px;
-        background: #F2F5F9;
-        margin-top: -25px;
-        z-index: 99;
-    }
-    .box_insurance-mid {
-        width: 386px;
-        height: 49px;
-        margin: 7px;
-        border: 3px solid #f6f7fa;
-        flex-shrink: 0;
-        background: linear-gradient(180deg, #FEFEFE 0%, #F6F7FA 100%);
-    }
-    span.arrow_right-insurance.card {
-        display: inline;
-        background-color: transparent;
-        border: 0px solid transparent;
-        justify-content: flex-end;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-items: center;
-        top: -20px;
-        transition: transform 0.3s ease-out;
-        transition-delay: 0.4ms;
-    }
-    .insurance_box-lg
-    {
-        color: #000;
-        text-align: left;
-        font-family: Quicksand;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 156.523%; /* 23.478px */
-        letter-spacing: 0.3px;
-        transition: transform 0.4s ease-in;
-    }
-    .insurance_box-lg:hover {
-        transform: translateX(55px);
-    }
-    .insurance_box-lg:hover span.arrow_right-insurance.card{
-       transform: translateX(-3rem);
-    }
-    .image_second-insurance{
-        margin-top: -30px;
-        z-index: 99;
-        position: absolute;
-    }
-    .image_second-insurance_image{    
-        width: 95%;
-        height: 220%;
-    }
-    .box-eligible-lg-2 {
-        flex-shrink: 0;
-        border-radius: 10px;
-        background: #F2F5F9;
-        left: 51%;
-        width: 47.5%;
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-        top: -60px;
-    }
-    .el-lg-age-1{
-        color: #000;
-        text-align: center;
-        font-family: Quicksand;
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 156.523%; /* 23.478px */
-        letter-spacing: 1.5px;
-    }
 
+        /* Section for insurance sec image start */
+        .insurance_sec_image_start {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            position: relative !important;
+            left: 0 !important;
+            top: 0 !important;
+            max-width: max-content;
+        }
+
+        .insurance_sec_image_start,
+        .insure-life-insurance-RW5 {
+            color: #000;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 160%;
+            /* 20.8px */
+            letter-spacing: 0.39px;
+            text-transform: uppercase;
+            left: 4rem;
+            top: 8.1rem;
+            position: absolute;
+            z-index: 99;
+        }
+
+        .insurance_sec_image_start {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .lif-in-ce-ss {
+            position: absolute;
+            left: 4rem;
+            top: 9.5rem;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 0.12rem;
+            text-transform: capitalize;
+            color: #2e4392;
+            white-space: nowrap;
+            z-index: 99;
+        }
+
+        .group-104-vdB,
+        .insurance_family-image {
+            width: 100%;
+            height: 750%;
+            object-fit: contain;
+            vertical-align: top;
+            flex-shrink: 1;
+            background: url(Assets/Images/insurance_familyimage.png), lightgray 0px -7.857px / 100% 204.034% no-repeat, #D9D9D9;
+        }
+        .insurance_family-image:hover {
+            transform: scale(0.89);
+            transition-delay: 0s;
+            padding: 30px;
+            animation: box-arrow 3s ease-in-out infinite;
+        }
+
+        @keyframes box-arrow {
+            0% {
+                transform: scale(0.95);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            90% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(0.95);
+            }
+        }
+        /* Section for insurance sec image end */
+
+        /* Section for insurance sec 2 image start */
+        .image_sec2-insurance_process{
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+            position: relative !important;
+            left: 0 !important;
+            top: 0 !important;            
+            width: 100%;
+
+        }      
+        .row .image-row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; /* Corrected property */
+            justify-content: space-between;
+            
+        }
+        .col-md-lg-1 {
+            width: 50px;
+            height: 350px;
+            margin-left: 10px;
+        }
+        .col-md-lg-4 {
+            width: 420px;
+            height: max-content;
+            position: relative;
+            margin-top: -25px;
+            z-index: 99;
+        }
+        .card_box_insurance {
+            width: 425px;
+            flex-shrink: 1;
+            border-radius: 5px;
+            background: #F2F5F9;
+            z-index: 99;
+            position: absolute;
+            max-height: max-content;
+            min-height: 400px;
+        }
+        .box_insurance-mid {
+            width: 386px;
+            height: 49px;
+            margin: 7px;
+            border: 3px solid #f6f7fa;
+            flex-shrink: 1;
+            background: linear-gradient(180deg, #FEFEFE 0%, #F6F7FA 100%);
+        }
+        .insurance_box-lg {
+            color: #000;
+            text-align: left;
+            font-family: Quicksand;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 156.523%;
+            letter-spacing: 0.3px;
+            transition: transform 0.4s ease-in;
+        }          
+        span.arrow_right-insurance.card {
+            display: inline;
+            background-color: transparent;
+            border: 0px solid transparent;
+            justify-content: flex-end;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            top: -20px;
+            transition: transform 0.3s ease-out;
+            transition-delay: 0.4ms;
+        }
+        .insurance_box-lg:hover {
+            transform: translateX(55px);
+        }
+
+        .insurance_box-lg:hover span.arrow_right-insurance.card {
+            transform: translateX(-3rem);
+        }
+        .col-md-lg-5 {
+            width: 715px;
+            height: 455px;
+            display: block;
+            margin-top: -15px;
+        }             
+        .col-md-lg-5 .image_second-insurance_image {
+            width: 725px;
+            max-height: 350px;
+            display: block;
+        }
+        .image_second-insurance {
+            margin-top: -15px;
+            z-index: 99;
+            position: absolute;            
+        }
+        .box-eligible-lg-2 {
+            flex-shrink: 1;
+            border-radius: 10px;
+            background: #F2F5F9;
+            width: 725px;
+            padding: 5px 10px ;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            top: 20px;
+            border: 1px solid #F2F5F9;
+        }
+        .el-lg-age-1,
+        .text-blule {
+            color: #000;
+            text-align: center;
+            font-family: Quicksand;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 156.523%;
+            /* 23.478px */
+            letter-spacing: 1.5px;
+        }
+
+        .text-blule {
+            color: #2E4392 !important;
+        }
+       
+ /* Section for insurance sec image end */
+     /* Section for insurance sec image end */
+      
+     .download-insurance{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 3px solid; 
+            margin-top: -10px;
+            height: max-content;    
+            
+        }    
+        .dwnld-resource {
+            color: #2E4392;
+            text-align: justify;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 180%;
+            letter-spacing: 0.5px;
+        }
+        .col-md-lt-1,.col-lg-mt-ins-2-1
+        {
+            width: 50px;
+            margin: 5px 10px;
+        }
+        .col-md-lt-4{
+            
+            width: 350px;
+            padding: 5px 5px;
+            display: flex;
+            flex-direction: column;
+            margin: 5px 10px;
+        }
+        .p-col-md-lt-4
+        {
+            color: #2E4392;
+            width: fit-content;
+            text-align: justify;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 180%; /* 45px */
+            letter-spacing: 0.5px;
+            
+        }
+        .box-sec-total{
+            display: flex;
+            flex-direction: row;
+        }
+     
+        .sec-2_box-1 .download-size,.sec-2_box-2 .download-size
+        {
+            color: #000;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 11px;
+            width: 0px;
+            height: 0px;
+            margin-left: 28%;
+            margin-top: -15px;;
+        }
+        .sec-2_box-1 .policy_name,.sec-2_box-2 .policy_name{
+            color: #000;
+            text-align: center;
+            font-family: serif;
+            font-size: 12px;
+            font-style: bold;
+            font-weight: 700;
+            letter-spacing: 0.26px;
+        }
+        
+        .sec-2_box-1,.sec-2_box-2
+        {
+           
+            width: 157px;
+            height: 179px;
+            flex-shrink: 1;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.50);
+            opacity: 1;
+            justify-content: space-between;
+            margin: 15px ;
+            gap: 2rem;
+            text-align: center;   
+            background-color: transparent;       
+        }
+        button.download-pdf{
+            width: 91px;
+            background-color: #2E4392;
+            text-align: center;
+            height: 26px;
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 180%; /* 18px */
+            letter-spacing: 0.2px;
+            border-radius: 5%;
+            border: none !important;
+        }
+        .col-md-lt-5,.col-lg-mt-ins-2-4
+        {
+            width: 800px;
+            height: max-content;
+            color: #000;
+            text-align: justify;
+            font-family: Quicksand;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 180%; /* 27px */
+            letter-spacing: 0.3px;
+            width: 809px;
+            height: fit-content;
+            flex-shrink: 1;
+        }
+.col-lg-mt-ins-2-4{
+    width: 250px;
+    padding: 15px;
+    height: 189px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #000;
+    position: relative;
+    top: 30%;
+    left: 14%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+
+}
+.teleephone_icon_green
+{
+    width: 53px;
+    height: 53px;
+    flex-shrink: 1;
+    position: absolute;
+   justify-content: center;
+   align-items: center;
+   top: 10%;
+   left: 37%;
+}
+.text-telephone-image-content
+{
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    font-family: Inter;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    display: flex;
+    width: 210px;
+    height: 19px;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    flex-shrink: 0;
+    top: 60%;
+}
+     .col-lg-mt-ins-2-5{
+        width: 500px;
+        float: left;
+        margin-left: 30%;
+        border: 1px solid;
+
+     }
+.main-right-content{
+    color: #0CE0FF;
+text-align: justify;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 600;
+line-height: 180%; /* 45px */
+letter-spacing: 0.5px;
+}
+i.fa-check{
+    color: #0CE0FF;
+    width: 15px;
+    height: 15px;
+}
+.col-row_lg-mt-ins-2-1{
+    width: 100%;
+height: 437px;
+flex-shrink: 0;
+}
+.col-md-6.main-fe-lg0-st-1-md_6 {
+    width: 650px;
+    height: 437px;
+    flex-shrink: 0;
+    position: relative;
+    top: -70px;
+    background-color: rgb(193, 192, 192) 50%;
+}.box-lg-md-23-fu{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-around;
+    width: 600px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}.box-lg-md-23-fu i{
+    padding: 0px 15px;
+}
+.main-fe-lg0-st-1-md_4{
+    margin: 0px 30px;
+}.talk-content
+{
+    text-indent: 0em;
+    margin-left: 15px;
+    border: 1px solid red;
+    width: 470px;
+
+}
+.card-header_insurance-agent{
+    color: #000;
+text-align: left;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 23.4px */
+letter-spacing: 0.36px;
+}
+.mobile-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    justify-items: end;
+    margin-left: 25px;
+
+}.type-nu{
+    width: 180px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: none;
+    background: #B8D6E8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+}.type-nu:focus
+{
+    border: none;
+}
+.get-a-call{
+    width: 150px;
+height: 44px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #2E4392;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+color: #FFF;
+border: none;
+font-size: 15px;
+}
+.subscribe_news-letter{
+    width: 1339px;
+height: 315px;
+flex-shrink: 0;
+background: #FFF;
+
+}
+   
+
+        
+
+       
+
+/* 
+        
+    
+
+
+       
+
+
+
+        /* Section for insurance sec image end *
+      
+        .download-insurance{
+            display: flex;
+            flex-direction: row;
+            grid-template-columns: max-content;
+            position: relative;
+            
+        }
+        .dwnld-resource {
+            color: #2E4392;
+            text-align: justify;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 180%;
+            /* 45px *
+            letter-spacing: 0.5px;
+        }
+        
+        .box-eligible-lg-2 {
+            flex-shrink: 1;
+            border-radius: 10px;
+            background: #F2F5F9;
+            left: 51%;
+            width: 47.5%;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            top: -20px;
+        }
+
+        .el-lg-age-1,
+        .text-blule {
+            color: #000;
+            text-align: center;
+            font-family: Quicksand;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 156.523%;
+            /* 23.478px *
+            letter-spacing: 1.5px;
+        }
+
+        .text-blule {
+            color: #2E4392 !important;
+        }
+       
+ */
+    
+
+    }
 </style>
+
 <body>    
     <section class="body-header">        
             <!----second nav starts -------------->
@@ -228,6 +624,7 @@
             </section>   
              <!----second nav ends --------------> 
     </section>
+
         <section class="insurance_sec_image_start">
             <div class="text_above-image">
                 <p class="insure-life-insurance-RW5">Insure / Life Insurance</p>
@@ -239,10 +636,11 @@
                 </div>            
             </div>
         </section>
+
         <section class="image_sec2-insurance_process">
-            <div class="row">
-                <div class="col-md-1"></div>
-                    <div class="col-md-4">
+            <div class="row image-row">
+                <div class="col-md-lg-1"></div>
+                    <div class="col-md-lg-4">
                         <div class="card card_box_insurance">                                    
                                     <div class="box_insurance-mid">
                                         <p class= "insurance_box-lg">car insurance <span class="arrow_right-insurance card"><i class="fas fa-arrow-right"></i></span></p>                        
@@ -264,22 +662,145 @@
                                     </div>
                         </div>
                     </div>                
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
+                <div class="col-md-lg-1"></div>
+                <div class="col-md-lg-5">
                     <div class="image_second-insurance">
-                        <img class="image_second-insurance_image" src="Assets/Images/insurance_image-2.png" alt="the second images for the reference as insurance" srcset="">
+                        <img class="image_second-insurance_image" src="Assets/Images/insurance_image-2.png" alt="the second images for the reference as insurance" srcset=""/>
+                        <div class="box-eligible-lg-2">
+                            <span class="el-lg-age-1">Eligible Ages: <span class="text-blule"></span>  </span><span class="el-lg-age-1">Minimum Age :<span class="text-blule"> 10 Years </span></span><span class="el-lg-age-1">Maximum Age :<span class="text-blule"> 70 Years </span></span>
+                        </div>                          
                     </div>
-                  
-
-                </div>
-                <div class="box-eligible-lg-2">
-                    <span class="el-lg-age-1">Eligible Ages:  </span><span class="el-lg-age-1">Minimum Age :10 Years </span><span class="el-lg-age-1">Maximum Age :70 Years </span> 
-                     
-                     
-                 </div>
-                <div class="col-md-1"></div>
+                </div>                
+                <div class="col-md-lg-1"></div>
             </div>
         </section>
+
+        <!-- section image and eligiblity criteria -->
+        <section class="download-insurance">
+            <div class="row dwnld-resource">
+                <div class="col-md-lt-1"></div>
+                <div class="col-md-lt-4">                    
+                    <p class="p-col-md-lt-4">Download Resources</p>
+                    <div class="box-sec-total">
+                        <div class="sec-2_box-1">
+                            <div class="image_pdf-box">
+                                <img class ="pdf-logo-download" src="./Assets/Images/image-download-pdf.png" alt="the pdf download logo"/>                                
+                            </div>
+                            <p class="download-size">3.42kb</p>
+                            <p class="policy_name">Travel Plan &
+                                Policy</p>
+                            <button class="download-pdf" type="submit">DOWNLOAD</button>
+                        </div>
+                        <div class="sec-2_box-2">
+                            <div class="image_pdf-box-2">
+                                <img class ="pdf-logo-download" src="./Assets/Images/image-download-pdf.png" alt="the pdf download logo"/>
+                            </div>
+                            <p class="download-size">5.42kb</p>
+                            <p class="policy_name">Basic plan</p>
+                            <button class="download-pdf" type="submit">DOWNLOAD</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-lt-1"></div>
+                <div class="col-md-lt-5">
+                    <div class="content-para-right">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, quaerat? Alias, id voluptatem eius, voluptatum maiores necessitatibus asperiores dicta beatae commodi obcaecati saepe, ipsum culpa libero temporibus odio qui sequi?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, quaerat? Alias, id voluptatem eius, voluptatum maiores necessitatibus asperiores dicta beatae commodi obcaecati saepe, ipsum culpa libero temporibus odio qui sequi?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, quaerat? Alias, id voluptatem eius, voluptatum maiores necessitatibus asperiores dicta beatae commodi obcaecati saepe, ipsum culpa libero temporibus odio qui sequi?</p>
+                    </div>
+                   
+                </div>
+                <div class="col-md-lt-1"></div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-mt-ins-2-1"></div>
+                <div class="col-lg-mt-ins-2-4">
+                    <img class="teleephone_icon_green" src="Assets/Images/telephone-icon.png" alt=" telephone icon" srcset="">
+                    <div class="text-telephone-image-content">
+                        Talk to our Insurance Agent
+                        <br>
+                        +325 0236 02368
+                        <br>
+                        Call to ur Experts
+                    </div>
+                    
+                    
+                </div>
+               
+                <div class="col-lg-mt-ins-2-1"></div>
+                <div class="col-lg-mt-ins-2-5">
+                    <div class="main-right-content">
+                        Main Features                        
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus facilis magnam earum vero veritatis cum provident. Perspiciatis enim soluta cupiditate, quam optio magnam impedit. Ad molestias veniam numquam assumenda.</p>
+                    <p class="content_ss_main-f"><i class="fa-solid fa-check"></i> Lorem ipsum dolor adipisicing elit. .</p>
+                    <p class="content_ss_main-f"><i class="fa-solid fa-check"></i> Lorem ipsum dolor adipisicing elit. .</p>
+                    <p class="content_ss_main-f"><i class="fa-solid fa-check"></i> Lorem ipsum dolor adipisicing elit. .</p>
+                    <p class="content_ss_main-f"><i class="fa-solid fa-check"></i> Lorem ipsum dolor adipisicing elit. .</p>
+                </div>
+                <div class="col-lg-mt-ins-2-1"></div>
+
+            </div>
+            <div class="row col-row_lg-mt-ins-2-1">
+
+           
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-6 main-fe-lg0-st-1-md_6">
+                <div class="box-lg-md-23-fu">
+                    <div><i class="fa-solid fa-hand-sparkles"></i></div>
+                <div class="">Fast and Easy Process</div>
+                <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="box-lg-md-23-fu">
+                    <div><i class="fa-solid fa-hand-sparkles"></i></div>
+                    <div class="">Fast and Easy Process</div>
+                    <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+                <div class="box-lg-md-23-fu">
+                    <div > <i class="fa-solid fa-hand-sparkles"></i> </div>
+                    <div class="">Fast and Easy Process</div>
+                    <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+            
+                
+            <div class="col-md-4 main-fe-lg0-st-1-md_4">
+                <div class="card-header_insurance-agent">
+                    Talk to our Insurance Agent
+                </div>
+                <div class="talk-content">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo quibusdam provident ea facilis totam aliquam sed aliquid exercitationem odio dignissimos, quos iusto dicta fugit ullam magnam mollitia! Asperiores, eaque ipsam!
+                </div>
+                <div class="mobile-contact">
+                    <input class="type-nu" type="int" name="" placeholder="Enter Your Number" id="">
+                    <input class="get-a-call" type="submit" value="Get a Phone call">
+                </div>
+            </div>
+            <div class="col-md-1 main-fe-lg0-st-1-md_1"></div>
+        </div>
+
+            <div class="subscribe_news-letter">
+                <div class="subscribe-news">
+                Sign Up For Newsletter
+                </div>
+                <div class="">
+                    Join 60,000+ Subscribers and a new discount <br>
+coupon on every Saturday.
+                </div>
+                <div class="input-group mb-3 mt-4">
+                    <input type="text" class="form-control" placeholder="Enter email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-success border-rad" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+       
+            </div>
+            <div class=""></div>
+            <div class=""></div>
+            <div class=""></div>
+        </section>
+
 
 </body>
 </html>
